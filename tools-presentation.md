@@ -24,6 +24,15 @@ slideOptions:
 
 ----
 
+## Virtual Private Network (VPN)
+
+- Otago ITS provides a Cisco VPN facility
+- You install an app on macOS/Windows/iOS/...?
+- You choose to connect and authenticate
+- Your computer is now "on-campus" in a network sense, for access to on-campus computing resources
+
+----
+
 ## Password-free SSH connectivity
 
 - Set up public-key authentication
@@ -53,11 +62,11 @@ host hex
 
 - I have an alias `ossh` for connecting via proxy:
 ```
-alias issh="ssh -o ProxyCommand=\
-'/usr/bin/nc -x localhost:1082 %h %p'"
+alias ossh="ssh -o ProxyCommand=\
+'/usr/bin/nc -x localhost:1080 %h %p'"
 ```
 
-- Browser can connect through proxy (e.g., use the FoxyProxy add-on to Firefox)
+- Browser can connect through proxy (e.g., use the [FoxyProxy](https://getfoxyproxy.org) add-on to Firefox)
 
 ---
 
